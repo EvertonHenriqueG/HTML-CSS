@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+<!--Tags para ajustar a imgem-->
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flecível">
+    </picture>
+    <h1>Reproduzir Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Correle Carna - Cumbia Deli.mp3" controls autoplay></audio>
+    <!--MP3 WAY OGG-->
+   <audio preload="metadata" autoplay controls>
+    <source src="midia/Day y Noche - Cumbia Deli.mp3" type="audio/mpeg">
+    <source src="midia/Day y Noche - Cumbia Deli.ogg" type="audio/ogg">
+    <source src="midia/Day y Noche - Cumbia Deli.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Day y Noche - Cumbia Deli.mp3">Cluque aqui para conseguir baixar o arquivo MP3</a></p>
+
+   </audio>
+</body>
+</html>
